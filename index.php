@@ -153,15 +153,15 @@
   }
   .card{
   text-align:left;
-  width:250px;
+  width:270px;
   height:400px;
   float:left;
   margin-left:35px;
   border:solid 1px green;
   }
    .card-img-top{
-  	 width:250px;
-	 height:150px;
+  	 width:270px;
+	 height:180px;
   }
   .buttonstyle{
                text-align:left;
