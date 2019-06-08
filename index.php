@@ -615,10 +615,10 @@ body{
            </textarea>
 
 		    </ul>
-       
+            <br>
  <!--instruction-->
-           <div>
-		    <h5 style="margin-left:20px; padding-top:350px">instrution: 1click table button. 2choose function. 3you can copy data to excel.</h5>
+          <div>
+		    <h5 style="margin-left:20px; padding-top:250px">instrution: 1click table button. 2choose function. 3you can copy data to excel.</h5>
 			</div>
 		
 <!--search fountion-->
