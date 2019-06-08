@@ -153,20 +153,20 @@
   }
   .card{
   text-align:left;
-  width:260px;
+  width:250px;
   height:400px;
   float:left;
   margin-left:35px;
   border:solid 1px green;
   }
    .card-img-top{
-  	 width:260px;
+  	 width:250px;
 	 height:150px;
   }
   .buttonstyle{
                text-align:left;
 			   color: green;
-               font-size:14px;
+               font-size:16px;
    			   width:100%;
               }
     i{
@@ -360,8 +360,8 @@ body{
  <!--table button-->
 	 <ul id="myUL">	   			  
 	           <div  class="card" ><img class="card-img-top" src="card1.jpg" id="div1">
-               <div class="card-body">	
-	                <div class="btn-group" >
+               <div class="card-body" style="margin-left:-20px;width:250px;">	
+	                <div class="btn-group">
                     <button  type="button"  class="buttonstyle btn btn-link dropdown-toggle" data-toggle="dropdown" >1.Agencies</button>
 					      <div class="dropdown-menu ">
 					         <form method="post" action="dbselect.php"> 
@@ -376,7 +376,7 @@ body{
 					</div>
 				  
 				  
-				    <div class="btn-group">
+				    <div class="btn-group" >
                     <button  type="button"  class="buttonstyle btn btn-link dropdown-toggle " data-toggle="dropdown" >2.Agents</button>
 					      <div class="dropdown-menu ">
 					         <form method="post" action="dbselect.php"> 
@@ -422,7 +422,7 @@ body{
 		   </div>
 
 		   	<div  class="card" ><img class="card-img-top" src="card2.jpg" id="div2" >
-               <div class="card-body">	
+               <div class="card-body" style="margin-left:-20px;width:250px;">	
 	                <div class="btn-group">
                     <button  type="button"  class="buttonstyle btn btn-link dropdown-toggle " data-toggle="dropdown" >5.Classes</button>
 					      <div class="dropdown-menu ">
@@ -484,7 +484,7 @@ body{
 		   </div>
 
 		   	<div  class="card" ><img class="card-img-top" src="card3.jpg" id="div3">
-    <div class="card-body">	
+              <div class="card-body" style="margin-left:-20px;width:250px;">	
 	                <div class="btn-group">
                     <button  type="button"  class="buttonstyle btn btn-link dropdown-toggle" data-toggle="dropdown" >9. fees</button>
 					      <div class="dropdown-menu ">
@@ -546,7 +546,7 @@ body{
 		   </div>
 
 		   	<div  class="card" ><img class="card-img-top" src="card4.jpg" id="div4">
-    <div class="card-body">	
+          <div class="card-body" style="margin-left:-20px;width:250px;">	
 	                <div class="btn-group">
                     <button  type="button"  class="buttonstyle btn btn-link dropdown-toggle" data-toggle="dropdown" >13. products_suppliers</button>
 					      <div class="dropdown-menu ">
