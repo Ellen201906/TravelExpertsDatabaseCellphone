@@ -166,10 +166,10 @@
   .buttonstyle{
         
 			   color: green;
-               font-size:17px;
+               font-size:16px;
                text-align:left;
 			   opacity:0.9;
-			   width:250px;
+			   width:100%;
               }
     i{
       font-size:50px;
@@ -190,7 +190,7 @@ body{
     <h3 id="head1">Welcome to Travel Experts Database System (2019)</h3>
     <img src="icon.jpg" style="width:80px;margin-top:-10px">
 	<br>
-	<button style="float:right;margin-top:-20px;margin-right:10px" type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+	<button style="float:right;margin-top:-10px;margin-right:10px" type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
       login
    </button>
  
@@ -225,7 +225,7 @@ body{
 
 
 	
-	   <div style="margin-top:-45px;margin-right:39px;display:block" class="container">        		
+	   <div style="margin-top:-45px;margin-right:78px;display:block" class="container">        		
       <!--setting , user can change photos and background image-->   
 		 <a class="nav-item dropdown"><a class="headermenu " class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"  data-toggle="tooltip" data-placement="bottom" title="setting" >
 	         <i class="fa fa-cog" style="font-size:20px"></i>
@@ -249,16 +249,22 @@ body{
 
 <!--navgation bar-->
    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
    <ul class="navbar-nav">
     <li class="nav-item">
 
 <!--Search by table name-->
-       <a style="margin-top:-10px;color:black;" class="nav-link" href="#" ><input class="border-success" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ..."></a>
+       <a style="margin-top:-10px;color:black;width:150px" class="nav-link" href="#" ><input class="border-success" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ..."></a>
     </li>
 
 <!--dropdown menu-->  
 	<li class="nav-item dropdown" >
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="margin-left:100px" >
         Human Resorces
       </a>
       <div class="dropdown-menu">
