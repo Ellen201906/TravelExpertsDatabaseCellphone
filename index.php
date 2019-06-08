@@ -153,14 +153,14 @@
   }
   .card{
   text-align:left;
-  width:270px;
+  width:275px;
   height:400px;
   float:left;
   margin-left:35px;
   border:solid 1px green;
   }
    .card-img-top{
-  	 width:270px;
+  	 width:275px;
 	 height:180px;
   }
   .buttonstyle{
@@ -610,7 +610,7 @@ body{
 
  <!--announcement-->
                
-			   <textarea rows="4" cols="35" style="margin-left:30px;opacity: 0.5;text-align:left;border:green solid 1px"  >
+			   <textarea rows="5" cols="30" style="margin-left:30px;opacity: 0.5;text-align:left;border:green solid 1px"  >
              comment by 
            </textarea>
 
