@@ -164,12 +164,10 @@
 	 height:150px;
   }
   .buttonstyle{
-              padding-left:auto;
+               text-align:left;
 			   color: green;
-               font-size:17px;
-          
-			   opacity:1;
-			   width:100%;
+               font-size:14px;
+   			   width:100%;
               }
     i{
       font-size:50px;
