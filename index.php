@@ -22,6 +22,7 @@
 	
 	
    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Travel Experts Database System</title>
    
   <style>
@@ -188,13 +189,13 @@ body{
   <!--header for system heardermenu tooltip dropdown-->
     <h3 id="head1">Welcome to Travel Experts Database System (2019)</h3>
     <img src="icon.jpg" style="width:80px;margin-top:-10px">
-	<br><br>
+	<br>
 	<button style="float:right;margin-top:-20px;margin-right:10px" type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
       login
    </button>
  
 <div class="modal fade" id="myModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
  
       <div class="modal-header">
@@ -210,7 +211,7 @@ body{
 		  <label style="width:100px">Password</label>
           <input type="password" name="password" placeholder="Password" aria-describedby="inputGroup-sizing-sm" value="">
 		  <br><br>
-          <button style="width:400px" type="submit" name="login-submit">Login</button>
+          <button style="width:100%" type="submit" name="login-submit">Login</button>
         </form>
       </div>   
       <div class="modal-footer">
