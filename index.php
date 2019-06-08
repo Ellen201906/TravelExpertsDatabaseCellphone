@@ -153,22 +153,22 @@
   }
   .card{
   text-align:left;
-  width:250px;
+  width:260px;
   height:400px;
   float:left;
   margin-left:35px;
   border:solid 1px green;
   }
    .card-img-top{
-  	 width:250px;
+  	 width:260px;
 	 height:150px;
   }
   .buttonstyle{
-        
+              padding-left:auto;
 			   color: green;
-               font-size:16px;
-               text-align:left;
-			   opacity:0.9;
+               font-size:17px;
+          
+			   opacity:1;
 			   width:100%;
               }
     i{
