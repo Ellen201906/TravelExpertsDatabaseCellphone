@@ -68,7 +68,7 @@
    //get value of id for deleting 
       print ' <form method="get" action="dbdelete1.php">';    
       print "<input autofocus   type='text' required  name='$id' >please input the Id you want to delete and submit:      </input>";
-	 print "<input  type='text' class='btn-success'  onclick='submitForm()' value='submit' name='$tablename'></input>";
+	 print "<input style='width:100px' type='text' class='btn-success'  onclick='submitForm()' value='submit' name='$tablename'></input>";
 	  print  '</form>';
 
 	
