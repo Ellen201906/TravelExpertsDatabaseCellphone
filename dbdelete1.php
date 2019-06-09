@@ -37,10 +37,10 @@ body{
     $tablename=array_keys($_GET)[1];
 	
    //connect to database
-     include 'dbcon.php';
+ include 'dbcon.php';
 
      //delete record
-   }
+   
     $sql = "DELETE FROM $tablename WHERE $fieldname=$id";
 
     $result = mysqli_query($dbh, $sql);
@@ -81,7 +81,7 @@ body{
 ?>
 <script>
                 function select() {
-                    var qq = window.open('webapplication.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
+                    var qq = window.open('http://localhost/my project/webapplication2.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
             }
             </script>
 

@@ -70,7 +70,7 @@
 	}
 	else
 	{
-	 print("error inserted");
+	 print("success");
 	}
 	
 	//print table after adding
@@ -102,7 +102,7 @@
 ?>
 <script>
                 function select() {
-                    var qq = window.open('webapplication.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
+                    var qq = window.open('index.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
             }
     
    

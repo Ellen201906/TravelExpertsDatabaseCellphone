@@ -35,7 +35,8 @@
 <?php
     //connect to database
    //the "@" suppresses error messages
-      include 'dbcon.php';
+    include 'dbcon.php';
+   
    //select table
     $tablename=array_keys($_POST)[0]; 
    $result = mysqli_query($dbh, "SELECT * FROM $tablename");

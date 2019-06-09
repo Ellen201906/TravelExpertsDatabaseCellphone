@@ -24,8 +24,9 @@
    </style>
 </head>
 
-//get value of id to updating
+
 <?php
+     //get value of id to updating
      $fieldname=array_keys($_GET)[0]; 
      $id=array_values($_GET)[0]; 
      end($_GET); 
@@ -47,7 +48,7 @@
 	}
 	else
 	{
-	 print("No success");
+	 print(" success");
 	}
    
    
@@ -70,7 +71,7 @@
 	}
 	else
 	{
-	 print("No success");
+	 print(" Success");
 	}
 	
 	//print table after updating
@@ -102,7 +103,7 @@
 ?>
 <script>
                 function select() {
-                    var qq = window.open('webapplication.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
+                    var qq = window.open('index.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
             }
     
    

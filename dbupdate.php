@@ -72,7 +72,7 @@
          print ' <form method="get" action="dbupdate1.php">
         ';
         print "<input autofocus type='text' required name='$id'>please input the Id you want to update and submit:      </input>";
-        print "<input type='text' class='btn-success'  onclick='submitForm1()' value='submit' name='$tablename'></input>";
+        print "<input type='text' style='width:100px' class='btn-success'  onclick='submitForm1()' value='submit' name='$tablename'></input>";
         print  '
     </form>';
 
