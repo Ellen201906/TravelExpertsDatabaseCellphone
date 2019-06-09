@@ -30,11 +30,12 @@
 
 <?php
 
-	
 	 //get the value of id (primary key)
      $fieldname=array_keys($_GET)[0]; 
+	 print $fieldname;
      $id=array_values($_GET)[0]; 
-   
+     print $id;
+	 print '<br>';
      end($_GET); 
      $key = key($_GET); 
 	 $tablename=$key;
@@ -45,21 +46,24 @@
    	 
     //select table and insert new records
    $result = mysqli_query($dbh, "SELECT * FROM $tablename");
-   print $fieldname; 
+   
    $sql = "insert into $tablename ($fieldname) values ($id)"; 
+   print $sql;
      $result = mysqli_query($dbh, $sql);
     // print $id;
 	//print count($_GET);
 	$j=count($_GET)-1;
+	print $j;
 	$i=1;
 	
 	while ($i<$j)
 	 {
 	$k1= (array_keys($_GET)[$i]);
-	//print $k1;
+	
 	$v1=(array_values($_GET)[$i]);
-	//print $v1;
+	
 	$sql = "UPDATE $tablename SET $k1='$v1' where $fieldname=$id"; 
+
 	 $result = mysqli_query($dbh, $sql); 
 	 $i=$i+1;
 	 } 

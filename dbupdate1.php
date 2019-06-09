@@ -22,9 +22,13 @@
 		//the "@" suppresses error messages
      include 'dbcon.php';
    //get fieldname and tablename;the value of id
+  
    $fieldname=array_keys($_GET)[0]; 
+   print $fieldname;
    $tablename=array_keys($_GET)[1];
+    print $fieldname.' table';
    $id=array_values($_GET)[0];
+   print $id;
   
    $result = mysqli_query($dbh, "SELECT * FROM $tablename where $fieldname=$id");  
    print '<h2 >'.$tablename.'</h2>';
@@ -45,7 +49,8 @@
 	   $i=$i+1;
 	  }
 	      
-       print "<input  type='text'  value='$id' name='$tablename'><button   style='width:90px;height:40px;color:green' onclick='submitForm()'>submit</button></input>";
+       print "<input  type='text'  value='$id' name='$tablename'><button   style='width:100px;height:40px;color:green' onclick='submitForm()'>submit</button></input>";
+	  print "Reminder:all field must be filled!";
 	  print  '</form>';
 
 	  ?>

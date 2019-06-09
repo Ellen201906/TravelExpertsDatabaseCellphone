@@ -33,16 +33,38 @@ body{
 
    //get id and tablename for deleting
     $fieldname=array_keys($_GET)[0];
+	print  $fieldname;
     $id=array_values($_GET)[0];
+	print  $id;
+	print  '<br>';
     $tablename=array_keys($_GET)[1];
-	
+	print $tablename.' table';
+	print '<br>';
    //connect to database
- include 'dbcon.php';
+     $dbh = @mysqli_connect("localhost","root","") or die("can't connect");
+   if (!$dbh)
+   {
+      print("can't connect");
+	  exit();
+   }
+   
+   if (mysqli_select_db($dbh, "travelexperts"))
+   {
+      print("Selected DB: travelexperts");
+	  print '<br>';
+   }
+   else
+   {
+      print("can't select DB: travelexperts");
+	   print '<br>';
+     exit();
+     
 
      //delete record
-   
+   }
     $sql = "DELETE FROM $tablename WHERE $fieldname=$id";
-
+	print $sql;
+	print '<br>';
     $result = mysqli_query($dbh, $sql);
 	if ($result)
 	{
@@ -81,7 +103,7 @@ body{
 ?>
 <script>
                 function select() {
-                    var qq = window.open('http://localhost/my project/webapplication2.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
+                    var qq = window.open('index.php', '_self', 'width=1300,height=1200,menubar=yes,toolbar=yes, status=yes,scrollbars=yes');       
             }
             </script>
 

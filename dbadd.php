@@ -21,10 +21,8 @@
     //connect to database
 		//the "@" suppresses error messages connect database
   include "dbcon.php";
+  print "All field must be field and first field must be new!";
   
-   
-   
-
    //print table
    $tablename=array_keys($_POST)[0]; 
    $result = mysqli_query($dbh, "SELECT * FROM $tablename");  

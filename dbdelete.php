@@ -67,8 +67,15 @@
     
    //get value of id for deleting 
       print ' <form method="get" action="dbdelete1.php">';    
-      print "<input autofocus   type='text' required  name='$id' >please input the Id you want to delete and submit:      </input>";
-	 print "<input style='width:100px' type='text' class='btn-success'  onclick='submitForm()' value='submit' name='$tablename'></input>";
+      
+	  print "please input the ID(not in other table) you want to delete and submit! ";
+	  print "<br>";
+	  print "Reminder: you can delete ID in other table because foreign key constraint!";
+	  print "<br>";
+	  print "<input autofocus   type='text' style='width:100px' required  name='$id' ></input>";
+	  print "<input  type='text' style='width:100px' class='btn-success'  onclick='submitForm()' value='submit' name='$tablename'></input>";
+	  print "<br>";
+	  print "<br>";
 	  print  '</form>';
 
 	

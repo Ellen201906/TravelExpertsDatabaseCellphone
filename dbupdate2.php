@@ -42,14 +42,14 @@
    $sql="UPDATE $tablename SET $fieldname = '$id' WHERE $fieldname = $oldid";
  
     $result = mysqli_query($dbh, $sql);
-    if ($result)
-	{
-	 print("Record was updated");
-	}
-	else
-	{
-	 print(" success");
-	}
+    //if ($result)
+	//{
+	// print("Record was updated");
+	//}
+	//else
+	//{
+	// print("No success");
+	//}
    
    
     // update other columns
@@ -71,7 +71,7 @@
 	}
 	else
 	{
-	 print(" Success");
+	 print("No success,please make sure all field must be filled");
 	}
 	
 	//print table after updating

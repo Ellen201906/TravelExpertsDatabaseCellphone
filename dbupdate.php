@@ -31,10 +31,12 @@
     <title>Database Select Example</title>
   </head>
      <body>
-      //connect to database
+     
     <?php
     //the "@" suppresses error messages
+	   //connect to database
      include 'dbcon.php';
+	
     //get table name
     $tablename=array_keys($_POST)[0];
     $result = mysqli_query($dbh, "SELECT * FROM $tablename");
@@ -45,12 +47,11 @@
 
         $fieldinfo=mysqli_fetch_field($result);
         $id=$fieldinfo->name;
-        //print $id;
+        print $id;
         $result = mysqli_query($dbh, "SELECT * FROM $tablename");
         while( $fieldinfo=mysqli_fetch_field($result))
         {
-        print ("
-        <th>$fieldinfo->name</th>");
+        print ("<th>$fieldinfo->name</th>");
         }
         while ($row = mysqli_fetch_row($result))
         {
