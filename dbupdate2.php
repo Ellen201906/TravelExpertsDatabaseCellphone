@@ -67,7 +67,7 @@
  
    if ($result)
 	{
-	 print("Record was updated");
+	 print("All fields have been updated");
 	}
 	else
 	{

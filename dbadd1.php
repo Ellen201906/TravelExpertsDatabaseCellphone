@@ -50,10 +50,18 @@
    $sql = "insert into $tablename ($fieldname) values ($id)"; 
    print $sql;
      $result = mysqli_query($dbh, $sql);
+	  if ($result)
+	{
+	 print("New ID was inserted");
+	}
+	else
+	{
+	 print("no success");
+	}
     // print $id;
 	//print count($_GET);
 	$j=count($_GET)-1;
-	print $j;
+	
 	$i=1;
 	
 	while ($i<$j)
@@ -63,7 +71,7 @@
 	$v1=(array_values($_GET)[$i]);
 	
 	$sql = "UPDATE $tablename SET $k1='$v1' where $fieldname=$id"; 
-
+	print $sql;
 	 $result = mysqli_query($dbh, $sql); 
 	 $i=$i+1;
 	 } 
@@ -74,7 +82,7 @@
 	}
 	else
 	{
-	 print("success");
+	 print("Please make sure that all field must be filled");
 	}
 	
 	//print table after adding
