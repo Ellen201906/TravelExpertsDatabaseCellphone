@@ -38,32 +38,11 @@ body{
 	print  $id;
 	print  '<br>';
     $tablename=array_keys($_GET)[1];
-	print $tablename.' table';
-	print '<br>';
-   //connect to database
-     $dbh = @mysqli_connect("localhost","root","") or die("can't connect");
-   if (!$dbh)
-   {
-      print("can't connect");
-	  exit();
-   }
-   
-   if (mysqli_select_db($dbh, "travelexperts"))
-   {
-      print("Selected DB: travelexperts");
-	  print '<br>';
-   }
-   else
-   {
-      print("can't select DB: travelexperts");
-	   print '<br>';
-     exit();
-     
 
-     //delete record
-   }
+   //connect to database
+    include 'dbcon.php';
     $sql = "DELETE FROM $tablename WHERE $fieldname=$id";
-	print $sql;
+	
 	print '<br>';
     $result = mysqli_query($dbh, $sql);
 	if ($result)
