@@ -1,7 +1,7 @@
 <?php
 $dbServername="remotemysql.com";
 $dbUsername="Uhj84Kilfk";
-$dbPassword=" 7g5uBO7IOG";
+$dbPassword="7g5uBO7IOG";
 $dbname="Uhj84Kilfk";
  
 
