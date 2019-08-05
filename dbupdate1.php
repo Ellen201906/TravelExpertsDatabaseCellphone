@@ -44,10 +44,10 @@
     {
 		 $fieldname=$fieldinfo->name;
         print "<input autofocus value='$row[$i]' required type='text' name='$fieldname'>$fieldname</input>'";
-	   print "<input autofocus value='$row[$i]' required type='text' name='.$fieldname.'>$fieldname.";
+	   //print "<input autofocus value='$row[$i]' required type='text' name='.$fieldname.'>$fieldname.";
 	   print "<br>";
 	   $i=$i+1;
-	   print $i;
+	   //print $i;
 	  }
 	      
        print "<input  type='text'  value='$id' name='$tablename'><button   style='width:100px;height:40px;color:green' onclick='submitForm()'>submit</button></input>";
